@@ -1,0 +1,19 @@
+.hero__section{
+    max-width: 100%;
+    height: 540px;
+    
+
+    background-image: url('../../images/school\ logo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    // border-radius: 10px;
+    margin: 0 auto;
+}
+
+// mobile version
+@media (max-width: 576px) { 
+    .hero__section{
+        height: 440px;
+    }
+}

@@ -1,0 +1,137 @@
+.cert__section{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color:  $blue-400;
+    padding: 30px 0;
+}
+
+.cert{
+    padding: 10px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color:  $blue-400;
+
+}
+
+.cert__heading{
+    color: #FFFFFF;
+}
+
+.cert__subtext{
+    color:  #e6e9f1;;
+}
+
+.cert__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cert__item{
+    border: 2px solid white;
+    padding: 10px;
+    background-color: #FFFFFF;
+    width: 200px;
+}
+
+.cert__inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid blue;
+    padding: 5px 0;
+}
+
+.cert__top{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.cert__title{
+    color: blue;
+    text-transform: uppercase;
+    margin-bottom: -5px;
+}
+
+.cert__sign{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.cert__line{
+    margin-bottom: -1px;
+}
+
+.cert__name{
+    text-align: center;
+    font-weight: 700;
+}
+
+.cert__subject{
+    text-align: center;
+}
+
+.cert__bottom{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+@media (max-width: 576px) {
+    .cert__list{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .cert__item{
+        border: 2px solid white;
+        padding: 10px;
+        background-color: #FFFFFF;
+        width: 300px;
+    }
+
+    .cert__inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        border: 2px solid blue;
+        padding: 5px 0;
+        height: 350px;
+    }
+
+    .cert__heading{
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cert__subtext{
+        color:  #A9B4D0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+// tablet version
+@media (max-width: 868px) { 
+    .cert__list{
+        padding: 0;
+        display: flex;
+        gap: 10px;
+    }
+}
