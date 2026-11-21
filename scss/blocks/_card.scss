@@ -12,7 +12,15 @@
     margin: 0 auto;
     padding: 0 20px;
     background-color:  $green-100;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
+.bottom__list{
+    margin-top: 10px;
+}
+
 
 .card__list{
     display: flex;
