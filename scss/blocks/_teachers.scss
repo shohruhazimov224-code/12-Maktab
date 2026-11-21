@@ -1,0 +1,116 @@
+.teachers__section{
+    background-color: $green-500;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.teachers{
+    background-color: $green-500;
+    padding: 10px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teachers__left{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.teachers__left__logo{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+.teachers__left__text{
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.teachers__right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.teachers__right__holder__link{
+    color:  #FFFFFF;
+    border: 2px solid #FFFFFF;
+    padding: 5px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.teachers__right__holder__link:hover{
+    background-color: black;
+    border: 2px solid black;
+    color: #FFFFFF;
+}
+
+.teachers__burger{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: 0;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.teachers__burger span{
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+}
+
+
+@media (max-width: 576px) {
+    .teachers__burger{
+        display: flex;
+    }
+
+    .teachers__right{
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        text-align: center;
+        gap: 12px;
+        padding: 20px;
+        background-color: #0B1020;
+        z-index: 10;
+    }
+
+    .teachers__right--open{
+        display: flex;
+    }
+}
