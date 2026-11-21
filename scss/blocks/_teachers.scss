@@ -1,5 +1,5 @@
-.teachers__section{
-    background-color: $green-500;
+.certificates__section__teachers{
+    background-color: $blue-500;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
@@ -8,7 +8,7 @@
     position: relative;
 }
 
-.teachers{
+.certificates__teachers{
     background-color: $green-500;
     padding: 10px;
     max-width: 1440px;
@@ -19,14 +19,14 @@
     align-items: center;
 }
 
-.teachers__left{
+.certificates__left__teachers{
     display: flex;
     gap: 30px;
     justify-content: center;
     align-items: center;
 }
 
-.teachers__left__logo{
+.certificates__left__logo__teachers{
     width: 40px;
     height: 40px;
     background-color: black;
@@ -40,7 +40,7 @@
     border-radius: 6px;
 }
 
-.teachers__left__text{
+.certificates__left__text__teachers{
     font-weight: 700;
     font-size: 18px;
     color: black;
@@ -50,14 +50,14 @@
 }
 
 
-.teachers__right{
+.certificates__right__teachers{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
 }
 
-.teachers__right__holder__link{
+.certificates__right__holder__link__teachers{
     color:  #FFFFFF;
     border: 2px solid #FFFFFF;
     padding: 5px;
@@ -65,13 +65,13 @@
     transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
 }
 
-.teachers__right__holder__link:hover{
+.certificates__right__holder__link__teachers:hover{
     background-color: black;
     border: 2px solid black;
     color: #FFFFFF;
 }
 
-.teachers__burger{
+.certificates__burger__teachers{
     display: none;
     flex-direction: column;
     gap: 5px;
@@ -81,7 +81,7 @@
     cursor: pointer;
 }
 
-.teachers__burger span{
+.certificates__burger__teachers span{
     display: block;
     width: 26px;
     height: 3px;
@@ -91,11 +91,11 @@
 
 
 @media (max-width: 576px) {
-    .teachers__burger{
+    .certificates__burger__teachers{
         display: flex;
     }
 
-    .teachers__right{
+    .certificates__right__teachers{
         display: none;
         position: absolute;
         top: 100%;
@@ -110,7 +110,7 @@
         z-index: 10;
     }
 
-    .teachers__right--open{
+    .certificates__right--open__teachers{
         display: flex;
     }
 }
