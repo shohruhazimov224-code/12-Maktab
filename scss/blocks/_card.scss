@@ -30,10 +30,6 @@
     width: 395px;
     border-radius: 10px;
     box-sizing: border-box;
-    width: 100%;
-    margin: 0 0 16px;
-    text-align: center;
-    justify-content: center;
 }
 
 .bottom__list {
@@ -59,13 +55,6 @@
 
 
 
-
-
-
-
-
-
-
 @media (max-width: 576px) {
     .card__list {
         display: flex;
@@ -80,5 +69,12 @@
         display: block;
         max-width: 100%;
         height: auto;
+    }
+
+    .card__text {
+        width: 100%;
+        margin: 0 0 16px;
+        text-align: center;
+        justify-content: center;
     }
 }
