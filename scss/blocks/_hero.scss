@@ -1,19 +1,64 @@
-.hero__section{
-    max-width: 100%;
-    height: 540px;
+// .hero__section{
+//     max-width: 100%;
+//     height: 540px;
     
 
-    background-image: url('../../images/school\ logo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    // border-radius: 10px;
-    margin: 0 auto;
+//     background-image:
+//         linear-gradient(to bottom,
+//             rgba($bg, 0.25) 0%,
+//             rgba($bg, 0.55) 90%,
+//             $bg 100%),
+//         url('../../images/school\ logo.jpg');
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     // border-radius: 10px;
+//     margin: 0 auto;
 
+// }
+
+// // mobile version
+// @media (max-width: 576px) { 
+//     .hero__section{
+//         height: 440px;
+//     }
+// }
+
+
+.hero__section{
+    position: relative;
+    max-width: 100%;
+    height: 540px;
+    overflow: hidden;
 }
 
-// mobile version
-@media (max-width: 576px) { 
+.hero__slide{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.hero__slide--active{
+    opacity: 1;
+}
+
+.hero__section::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: linear-gradient(to bottom,
+        rgba($bg, 0.25) 0%,
+        rgba($bg, 0.55) 60%,
+        $bg 100%);
+}
+
+@media (max-width: 576px) {
     .hero__section{
         height: 440px;
     }

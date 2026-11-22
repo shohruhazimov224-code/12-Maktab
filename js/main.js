@@ -64,3 +64,17 @@ document.querySelectorAll('.card__item img').forEach((img) => {
         document.body.appendChild(box);
     });
 });
+
+
+// ===== 4. Hero photo slider =====
+const heroSlides = document.querySelectorAll('.hero__slide');
+
+if (heroSlides.length > 1) {
+    let currentSlide = 0;
+
+    setInterval(() => {
+        heroSlides[currentSlide].classList.remove('hero__slide--active');
+        currentSlide = (currentSlide + 1) % heroSlides.length;
+        heroSlides[currentSlide].classList.add('hero__slide--active');
+    }, 5000);
+}

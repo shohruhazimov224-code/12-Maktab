@@ -1,9 +1,7 @@
 .footer__section__2{
     max-width: 100%;
     margin: 0 auto;
-    padding: 0 20px;
-    background-color:  $green-900;
-    padding: 30px 0;
+    padding: 30px 20px;
 }
 
 .footer__2{
@@ -11,7 +9,6 @@
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
-    background-color:   $green-900;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -41,15 +38,27 @@
     font-size: 22px;
     letter-spacing: 0.15em;
     margin-bottom: -5px;
+    border: 2px solid $border;
+    padding: 10px; background-color: $card;
+    width: 165px;
+    border-radius: 10px;
 }
 
 .footer__text__2{
     color:  rgb(255, 255, 255);
     letter-spacing: 0.20em;
+    border: 2px solid $border;
+    padding: 10px; background-color: $card;
+    width: 285px;
+    border-radius: 10px;
 }
 
 .footer__link__2{
     color:  rgb(255, 255, 255);
+    border: 2px solid $border;
+    padding: 10px; background-color: $card;
+    width: 220px;
+    border-radius: 10px;
 }
 
 .footer__link__2:hover{

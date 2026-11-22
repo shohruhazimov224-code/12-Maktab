@@ -1,5 +1,4 @@
 .certificates__section{
-    background-color: $green-500;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
@@ -9,7 +8,6 @@
 }
 
 .certificates{
-    background-color: $green-500;
     padding: 10px;
     max-width: 1440px;
     margin: 0 auto;
@@ -29,7 +27,7 @@
 .certificates__left__logo{
     width: 40px;
     height: 40px;
-    background-color: black;
+    background-color: $blue-400;
     color: #FFFFFF;
     display: flex;
     align-items: center;
@@ -43,8 +41,8 @@
 .certificates__left__text{
     font-weight: 700;
     font-size: 18px;
-    color: black;
-    border: 2px solid black;
+    color: #FFFFFF;
+    border: 2px solid #FFFFFF;
     border-radius: 10px;
     padding: 5px;
 }
@@ -66,9 +64,9 @@
 }
 
 .certificates__right__holder__link:hover{
-    background-color: black;
-    border: 2px solid black;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    border: 2px solid #FFFFFF;
+    color: black;
 }
 
 .certificates__burger{

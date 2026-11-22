@@ -1,0 +1,57 @@
+.info__section{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px 20px;
+}
+
+.info{
+    padding: 10px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.info__text{
+    letter-spacing: 0.06em; 
+    line-height: 1.6;
+    text-align: center;
+    border: 2px solid $border;
+    background-color: $card;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.info__text__2{
+    letter-spacing: 0.06em; 
+    line-height: 1.6;
+    text-align: center;
+    border: 2px solid $border;
+    background-color: $card;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+    .info__text{
+        display: none;
+    }
+
+    .info__text__2{
+        display: block;
+    }
+}
+
+
+
+@media (max-width:  868px) {
+    .info__text{
+        display: none;
+    }
+
+    .info__text__2{
+        display: block;
+    }
+}
+
+
+

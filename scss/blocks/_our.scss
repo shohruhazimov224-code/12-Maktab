@@ -19,6 +19,10 @@
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     font-size: 36px;
+    border: 2px solid $border;
+    padding: 10px; background-color: $card;
+    width: 290px;
+    border-radius: 10px;
 }
 
 .our__list{
@@ -29,10 +33,11 @@
 
 .our__item{
     margin-top: 30px;
-    background-color: #FFFFFF;
+    background-color: $card;
     width: 300px;
     padding: 20px;
     border-radius: 10px;
+    border: 2px solid $border;
 }
 
 .our__img{
@@ -40,12 +45,16 @@
     margin-bottom: 10px;
 }
 
+.our__title{
+    color: $white;
+}
+
 .our__text{
-    color: #6d7891;
+    color: $white;
 }
 
 .our__link{
-    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
 }
 
 
