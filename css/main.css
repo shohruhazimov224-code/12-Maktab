@@ -684,6 +684,7 @@ a {
   padding: 10px;
   background-color: #FFFFFF;
   width: 200px;
+  display: flex;
 }
 
 .cert__inner {
@@ -694,6 +695,8 @@ a {
   gap: 10px;
   border: 2px solid blue;
   padding: 5px 0;
+  flex: 1;
+  box-sizing: border-box;
 }
 
 .cert__top {
@@ -727,6 +730,7 @@ a {
   text-align: center;
   font-weight: 700;
   color: black;
+  overflow-wrap: anywhere;
 }
 
 .cert__subject {
