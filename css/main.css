@@ -796,15 +796,6 @@ a {
     gap: 10px;
     flex-wrap: wrap;
   }
-  .cert__item {
-    flex: 0 0 calc(50% - 5px);
-    width: 200px;
-    height: 400px;
-  }
-  .cert__inner {
-    width: 347px;
-    height: 380px;
-  }
 }
 .reveal {
   opacity: 0;
