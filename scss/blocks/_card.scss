@@ -78,3 +78,14 @@
         justify-content: center;
     }
 }
+
+
+@media (max-width:  868px) {
+    .card__list{
+        flex-wrap: wrap;
+    }
+
+    .card__item{
+        flex: 0 0 calc(50% - 5px);
+    }
+}

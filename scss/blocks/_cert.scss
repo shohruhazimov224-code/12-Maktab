@@ -1,46 +1,49 @@
-.cert__section{
+.cert__section {
     max-width: 100%;
     margin: 0 auto;
     padding: 30px 20px;
 }
 
-.cert{
+.cert {
     padding: 10px;
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-.cert__heading{
+.cert__heading {
     color: #FFFFFF;
     border: 2px solid $border;
-    padding: 10px; background-color: $card;
+    padding: 10px;
+    background-color: $card;
     width: 360px;
     border-radius: 10px;
 }
 
-.cert__subtext{
-    color:  #e6e9f1;;
+.cert__subtext {
+    color: #e6e9f1;
+    ;
     border: 2px solid $border;
-    padding: 10px; background-color: $card;
+    padding: 10px;
+    background-color: $card;
     width: 365px;
     border-radius: 10px;
 }
 
-.cert__list{
+.cert__list {
     list-style: none;
     display: flex;
     justify-content: space-between;
 }
 
-.cert__item{
+.cert__item {
     border: 2px solid white;
     padding: 10px;
     background-color: #FFFFFF;
     width: 200px;
 }
 
-.cert__inner{
+.cert__inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -50,52 +53,52 @@
     padding: 5px 0;
 }
 
-.cert__top{
+.cert__top {
     display: flex;
     flex-direction: column;
     text-align: center;
     color: black;
 }
 
-.cert__title{
+.cert__title {
     color: blue;
     text-transform: uppercase;
     margin-bottom: -5px;
 }
 
-.cert__year{
+.cert__year {
     color: black;
 }
 
-.cert__sign{
+.cert__sign {
     display: flex;
     flex-direction: column;
     color: black;
 }
 
-.cert__line{
+.cert__line {
     margin-bottom: -1px;
 }
 
-.cert__name{
+.cert__name {
     text-align: center;
     font-weight: 700;
     color: black;
 }
 
-.cert__subject{
+.cert__subject {
     text-align: center;
     color: black;
 }
 
-.cert__bottom{
+.cert__bottom {
     display: flex;
     gap: 50px;
     align-items: center;
 }
 
 @media (max-width: 576px) {
-    .cert__list{
+    .cert__list {
         margin-top: 50px;
         display: flex;
         flex-direction: column;
@@ -105,14 +108,14 @@
         padding: 0;
     }
 
-    .cert__item{
+    .cert__item {
         border: 2px solid white;
         padding: 10px;
         background-color: #FFFFFF;
         width: 300px;
     }
 
-    .cert__inner{
+    .cert__inner {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -123,7 +126,7 @@
         height: 350px;
     }
 
-    .cert__heading{
+    .cert__heading {
         color: #FFFFFF;
         display: flex;
         justify-content: center;
@@ -135,8 +138,8 @@
         justify-content: center;
     }
 
-    .cert__subtext{
-        color:  #A9B4D0;
+    .cert__subtext {
+        color: #A9B4D0;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -149,28 +152,40 @@
 }
 
 // tablet version
-@media (max-width: 868px) { 
-    .cert__list{
+@media (max-width: 868px) {
+    .cert__list {
         padding: 0;
         display: flex;
         gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .cert__item{
+        flex: 0 0 calc(50% - 5px);
+        width: 200px;
+        height: 400px;
+    }
+
+    .cert__inner{
+        width: 347px;
+        height: 380px;
     }
 }
 
 // fade-up effect
-.reveal{
+.reveal {
     opacity: 0;
     transform: translateY(24px);
     transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-.reveal--visible{
+.reveal--visible {
     opacity: 1;
     transform: none;
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .reveal{
+    .reveal {
         opacity: 1;
         transform: none;
         transition: none;
@@ -178,11 +193,11 @@
 }
 
 // big certificate view
-.card__item img{
+.card__item img {
     cursor: zoom-in;
 }
 
-.lightbox{
+.lightbox {
     position: fixed;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.85);
@@ -194,7 +209,7 @@
     cursor: zoom-out;
 }
 
-.lightbox img{
+.lightbox img {
     max-width: 100%;
     max-height: 100%;
     border-radius: 8px;

@@ -1,10 +1,10 @@
-.footer__section{
+.footer__section {
     max-width: 100%;
     margin: 0 auto;
     padding: 30px 20px;
 }
 
-.footer{
+.footer {
     padding: 10px;
     max-width: 1440px;
     margin: 0 auto;
@@ -14,58 +14,61 @@
     align-items: center;
 }
 
-.footer__left{
+.footer__left {
     display: flex;
     flex-direction: column;
     gap: 20px;
     justify-content: center;
 }
 
-.footer__right{
+.footer__right {
     display: flex;
     flex-direction: column;
     gap: 10px;
     justify-content: center;
-    
+
 }
 
 
-.footer__title{
-    color:  rgb(255, 255, 255);
+.footer__title {
+    color: rgb(255, 255, 255);
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 700;
     font-size: 22px;
     letter-spacing: 0.15em;
     border: 2px solid $border;
-    padding: 10px; background-color: $card;
+    padding: 10px;
+    background-color: $card;
     width: 185px;
     border-radius: 10px;
 }
 
 
-.footer__text{
-    color:  rgb(255, 255, 255);
+.footer__text {
+    color: rgb(255, 255, 255);
     letter-spacing: 0.20em;
     border: 2px solid $border;
-    padding: 10px; background-color: $card;
+    padding: 10px;
+    background-color: $card;
     width: 312px;
     border-radius: 10px;
 }
 
-.footer__link{
-    color:  rgb(255, 255, 255);
+.footer__link {
+    color: rgb(255, 255, 255);
     border: 2px solid $border;
-    padding: 10px; background-color: $card;
+    padding: 10px;
+    background-color: $card;
     width: 265px;
     border-radius: 10px;
 }
 
-.footer__link:hover{
+.footer__link:hover {
     color: yellow;
 }
 
 @media (max-width: 576px) {
-    .footer{
+    .footer {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -73,24 +76,28 @@
         gap: 10px;
     }
 
-    .footer__left{
+    .footer__left {
         display: flex;
         flex-direction: column;
         gap: 10px;
         justify-content: center;
     }
 
-    .footer__title{
+    // .footer__text{
+    //     text-align: center;
+    // }
+
+    .footer__title {
         text-align: center;
     }
 
-    .footer__title{
+    .footer__link {
+        color: rgb(255, 255, 255);
         text-align: center;
     }
 
-    .footer__link{
-    color:  rgb(255, 255, 255);
-    text-align: center;
+    .footer__title__contact {
+        margin-bottom: -10px;
     }
+
 }
-

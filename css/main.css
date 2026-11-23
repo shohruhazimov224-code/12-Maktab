@@ -794,6 +794,16 @@ a {
     padding: 0;
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+  }
+  .cert__item {
+    flex: 0 0 calc(50% - 5px);
+    width: 200px;
+    height: 400px;
+  }
+  .cert__inner {
+    width: 347px;
+    height: 380px;
   }
 }
 .reveal {
@@ -919,12 +929,12 @@ a {
   .footer__title {
     text-align: center;
   }
-  .footer__title {
-    text-align: center;
-  }
   .footer__link {
     color: rgb(255, 255, 255);
     text-align: center;
+  }
+  .footer__title__contact {
+    margin-bottom: -10px;
   }
 }
 .search__section {
@@ -1189,6 +1199,14 @@ a {
     margin: 0 0 16px;
     text-align: center;
     justify-content: center;
+  }
+}
+@media (max-width: 868px) {
+  .card__list {
+    flex-wrap: wrap;
+  }
+  .card__item {
+    flex: 0 0 calc(50% - 5px);
   }
 }
 .footer__section__2 {
