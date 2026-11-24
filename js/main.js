@@ -24,7 +24,7 @@ setupBurgerMenu('.certificates__burger', '.certificates__right', 'certificates__
 
 // ===== 2. Fade-up when scrolling =====
 const revealItems = document.querySelectorAll(
-    '.name__date__text, .name__title, .name__links__holder, .our__heading, .our__item, .cert__heading, .cert__item, .card__heading, .card__title, .card__item'
+    '[data-reveal], .name__date__text, .name__title, .name__links__holder, .our__heading, .our__item, .cert__heading, .cert__item, .card__heading, .card__title, .card__item'
 );
 
 if ('IntersectionObserver' in window) {

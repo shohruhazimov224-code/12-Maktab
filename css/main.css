@@ -1345,4 +1345,74 @@ a {
   .info__text__2 {
     display: block;
   }
+}
+.director__section {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.director {
+  padding: 10px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.director__left {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.director__img__text {
+  margin-top: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  padding: 10px;
+  background-color: #141B34;
+  border-radius: 10px;
+}
+
+.director__img {
+  border-radius: 48%;
+}
+
+.director__text {
+  width: 500px;
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  padding: 10px;
+  background-color: #141B34;
+  width: 500px;
+  border-radius: 10px;
+}
+
+.director__text__subtext {
+  position: absolute;
+  right: 70px;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  padding: 10px;
+  background-color: #141B34;
+  width: 210px;
+  border-radius: 10px;
+}
+
+@media (max-width: 576px) {
+  .director {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  .director__text {
+    width: 300px;
+    text-align: center;
+  }
+  .director__text__subtext {
+    margin-bottom: 100px;
+  }
 }/*# sourceMappingURL=main.css.map */
