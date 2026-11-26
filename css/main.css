@@ -1465,38 +1465,39 @@ a {
 }
 
 .numbers {
-  display: flex;
-  gap: 50px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 .numbers__heading {
+  display: inline-block;
   border: 2px solid rgba(255, 255, 255, 0.08);
   padding: 10px;
   background-color: #141B34;
-  width: 180px;
   border-radius: 10px;
+  margin-bottom: 24px;
 }
 
 .numbers__folder {
-  display: flex;
-  gap: 100px;
-  align-items: center;
-  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
 }
 
 .numbers__item {
   border: 2px solid rgba(255, 255, 255, 0.08);
   padding: 10px;
   background-color: #141B34;
-  width: 200px;
   border-radius: 10px;
   text-align: center;
-  position: relative;
-  top: 50px;
-  left: 300px;
 }
 
 .numbers__title {
   color: #0d6efd;
+}
+
+@media (min-width: 577px) {
+  .numbers__folder {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
 }/*# sourceMappingURL=main.css.map */
